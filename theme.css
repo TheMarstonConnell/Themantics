@@ -1,0 +1,87 @@
+.theme-light {
+    --background: #ffffff;
+    --dark_background: #eeeeee;
+    --color-accent: #1976d2;
+    --font-color: #000000;
+ }
+ .theme-dark {
+    --background: #393E46;
+    --dark_background: #222831;
+    --color-accent: #FFD369;
+    --font-color: #eeeeee;
+ }
+
+ .theme-slight {
+    --background: #fdf6e3;
+    --dark_background: #eee8d5;
+    --color-accent: #b58900;
+    --font-color: #073642;
+ }
+
+ .theme-sdark {
+    --background: #073642;
+    --dark_background: #002b36;
+    --color-accent: #2aa198;
+    --font-color: #93a1a1;
+ }
+
+ .theme-cobalt{
+     --dark_background: #1F4662;
+     --background: #234E6D;
+     --color-accent: #ff95bc;
+     --font-color: #eeeeee;
+ }
+
+.background{
+    background-color: var(--background);
+
+}
+
+.dark_background{
+    background-color: var(--dark_background);
+}
+
+.selected{
+    border-color: var(--color-accent);
+}
+
+.selected:hover{
+    border-color: var(--color-accent);
+}
+
+*{
+    color: var(--font-color);
+}
+
+button{
+    background-color: var(--color-accent);
+    color: var(--dark_background);
+}
+
+button:hover{
+    filter: brightness(85%);
+}
+
+select {
+    background-color: var(--dark_background);
+}
+
+input[type=text], input[type=password]{
+    background-color: var(--dark_background);
+}
+
+input[type=button], input[type=submit], input[type=reset], button, .file-upload-wrapper{
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 10px 6px 10px;
+    background-color: var(--color-accent);
+    color: var(--background);
+}
+
+::selection {
+    color: var(--background);
+    background: var(--color-accent);
+}
