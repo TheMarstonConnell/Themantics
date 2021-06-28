@@ -8,7 +8,10 @@ function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
     let drop = document.getElementById('color_picker_drop');
-    drop.value = themeName;
+    if(drop){
+        drop.value = themeName;
+
+    }
 }
 
 function change_theme(){
