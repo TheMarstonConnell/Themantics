@@ -62,6 +62,10 @@ button:hover{
     filter: brightness(85%);
 }
 
+button:disabled:hover{
+    filter: brightness(100%);
+}
+
 select {
     background-color: var(--dark_background);
 }
