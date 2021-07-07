@@ -3,9 +3,9 @@
 }
 
 pre {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    color: #666;
+    background: var(--dark_background);
+    border: 1px solid var(--color-accent);
+    color: var(--font-color);
     page-break-inside: avoid;
     font-family: monospace;
     font-size: 15px;
