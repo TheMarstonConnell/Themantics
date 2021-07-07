@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
     <title>Themantics</title>
 </head>
 <body style="width: 100%; margin: 0px; height: 100%; text-align: center;">
@@ -13,18 +17,33 @@
         <h1 style="margin: 0px;">Themantics</h1>
         <h2>A simple Javascript and CSS theming engine.</h2>
 
+        <label for="color_picker_drop">Color Theme</label>
+        <select onchange="change_theme()" name="colors" id="color_picker_drop">
+            <option value="theme-light">Default</option>
+            <option value="theme-dark">Dark</option>
+            <option value="theme-slight">Solar Light</option>
+            <option value="theme-sdark">Solar Dark</option>
+            <option value="theme-cobalt">Cobalt</option>
+
+        </select>
+
         <h3>Installation</h3>
         <p>Either download the theme.js and theme.css files straight into your project or link them straight from this page.</p>
 
-        <label for="color_picker_drop">Color Theme</label>
-                <select onchange="change_theme()" name="colors" id="color_picker_drop">
-                    <option value="theme-light">Default</option>
-                    <option value="theme-dark">Dark</option>
-                    <option value="theme-slight">Solar Light</option>
-                    <option value="theme-sdark">Solar Dark</option>
-                    <option value="theme-cobalt">Cobalt</option>
+        <h4>Link</h4>
+        <p>Add these lines to your HTML head tag.</p>
+        <pre>
+            <code>
+                &lt;<script src="https://themarstonconnell.github.io/Themantics/theme.js"></script>&gt;
+                &lt;<link rel="stylesheet" href="https://themarstonconnell.github.io/Themantics/theme.js">&gt;
+            </code>
+        </pre>
 
-                </select>
+        <h4>Download</h4>
+        <p>Right click on the links to save the files.</p>
+        <a href="https://themarstonconnell.github.io/Themantics/theme.js">https://themarstonconnell.github.io/Themantics/theme.js</a>
+        <a href="https://themarstonconnell.github.io/Themantics/theme.css">https://themarstonconnell.github.io/Themantics/theme.css</a>
+        
     </div>
     
 </body>
