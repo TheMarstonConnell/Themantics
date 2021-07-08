@@ -10,11 +10,12 @@ pre {
     font-family: monospace;
     font-size: 15px;
     line-height: 1.6;
-    width: fit-content;
+    width: max-content;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
     display: block;
     word-wrap: break-word;
+    padding: 10px 20px 10px 20px;
     white-space: pre-line;
   }
