@@ -45,7 +45,7 @@
     border-color: var(--color-accent);
 }
 
-.selected:hover{
+.selected:hover {
     border-color: var(--color-accent);
 }
 
@@ -90,4 +90,8 @@ input[type=button], input[type=submit], input[type=reset], button, .file-upload-
 ::selection {
     color: var(--background);
     background: var(--color-accent);
+}
+
+::placeholder{
+    color: var(--font-color);
 }
